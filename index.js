@@ -17,6 +17,7 @@ function initializeData() {
     console.log('Data already exists in localStorage');
   }
 }
+
 initializeData()
 
 // TASK: Get elements from the DOM
@@ -30,7 +31,7 @@ const elements = {
   themeSwitch: document.getElementById('switch'),
   createNewTaskBtn: document.getElementById('add-new-task-btn'),
   modalWindow: document.getElementById('new-task-modal-window'),
-  sidebar: document.getElementById('side-bar-div')
+  sidebar: document.getElementById('side-bar-div'),
 
 }
 
@@ -115,7 +116,7 @@ function refreshTasksUI() {
 // Styles the active board by adding an active class
 // TASK: Fix Bugs
 function styleActiveBoard(boardName) {
-  document.querySelectorAll('.board-btn').foreach(btn => { 
+  document.querySelectorAll('.board-btn').forEach(btn => { 
     
     if(btn.textContent === boardName) {
       btn.classList.add('active') 
