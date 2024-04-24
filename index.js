@@ -29,6 +29,7 @@ const elements = {
   themeSwitch: document.getElementById('switch'),
   createNewTaskBtn: document.getElementById('add-new-task-btn'),
   modalWindow: document.getElementById('new-task-modal-window'),
+  sidebar: document.getElementById('side-bar-div')
 
 }
 
