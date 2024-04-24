@@ -202,7 +202,9 @@ function addTask(event) {
 
   //Assign user input to the task object
     const task = {
-      
+      title: document.getElementById('title-input'),
+      description: document.getElementById('desc-input'),
+      status: document.getElementById('select-status')
     };
     const newTask = createNewTask(task);
     if (newTask) {
