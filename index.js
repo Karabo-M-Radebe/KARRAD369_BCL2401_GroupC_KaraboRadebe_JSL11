@@ -233,9 +233,17 @@ function toggleSidebar(show) {
 }
 
 function toggleTheme() {
-  document.body.classList.toggle('dark-theme');
-  const isDarkTheme = document.body.classList.contains('dark-theme');
-  localStorage.setItem('light-theme', isDarkTheme ? 'enabled' : 'disabled');
+  //document.body.classList.toggle('dark-theme');
+  //const isDarkTheme = document.body.classList.contains('dark-theme');
+  //localStorage.setItem('light-theme', isDarkTheme ? 'enabled' : 'disabled');
+  if (localStorage.getItem('light-theme') == 'enable'){
+    document.body.classList.toggle('light-theme', false);
+    localStorage.setItem('light-theme', 'disable');
+  } 
+  else{
+    document.body.classList.toggle('light-theme', true);
+    localStorage.setItem('light-theme', 'enable');
+  }
  
 }
 
