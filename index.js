@@ -284,9 +284,17 @@ function openEditTaskModal(task) {
 
 function saveTaskChanges(taskId) {
   // Get new user inputs
+  const editTaskTile = document.getElementById('edit-task-title-input').value;
+  const editTaskDescription = document.getElementById('edit-task-desc-input').value;
+  const status = document.getElementById('edit-select-status').value;
   
-
   // Create an object with the updated task details
+  const updatedTask = {
+    title: editTaskTile,
+    description: editTaskDescription,
+    board: activeBoard,
+    status: status,
+  };
 
 
   // Update task using a hlper functoin
