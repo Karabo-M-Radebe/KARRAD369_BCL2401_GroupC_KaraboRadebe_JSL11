@@ -233,6 +233,9 @@ function toggleSidebar(show) {
 }
 
 function toggleTheme() {
+  document.body.classList.toggle('dark-theme');
+  const isDarkTheme = document.body.classList.contains('dark-theme');
+  localStorage.setItem('light-theme', isDarkTheme ? 'enabled' : 'disabled');
  
 }
 
