@@ -296,12 +296,12 @@ function saveTaskChanges(taskId) {
     status: status,
   };
 
-
-  // Update task using a hlper functoin
+  // Update task using a helper function
+  //const updatedTaskId = patchTask(taskId, updatedTask);
+  patchTask(taskId, updatedTask);
  
-
   // Close the modal and refresh the UI to reflect the changes
-
+  toggleModal(false, elements.editTaskModal);
   refreshTasksUI();
 }
 
