@@ -20,6 +20,15 @@ function initializeData() {
 
 // TASK: Get elements from the DOM
 const elements = {
+  headerBoardName: document.getElementById('header-board-name'),
+  columnDivs: document.querySelector('.column-div'),
+  editTaskModal: document.querySelector('.edit-task-modal-window'),
+  filterDiv: document.getElementById('filterDiv'),
+  hideSideBarBtn: document.getElementById('hide-side-bar-btn'),
+  showSideBarBtn: document.getElementById('show-side-bar-btn'),
+  themeSwitch: document.getElementById('switch'),
+  createNewTaskBtn: document.getElementById('add-new-task-btn'),
+  modalWindow: document.getElementById('new-task-modal-window'),
 
 }
 
