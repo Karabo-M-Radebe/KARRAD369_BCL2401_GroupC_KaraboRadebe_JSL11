@@ -207,7 +207,7 @@ function addTask(event) {
       status: document.getElementById('select-status').value,
       board:activeBoard
     };
-    
+
     const newTask = createNewTask(task);
     if (newTask) {
       addTaskToUI(newTask);
@@ -220,6 +220,15 @@ function addTask(event) {
 
 
 function toggleSidebar(show) {
+  if(show){
+    elements.sidebar.style.display = 'block';
+    elements.hideSideBarBtn.style.display = 'block';
+    elements.showSideBarBtn.style.display = 'none';
+  } else{
+    elements.sidebar.style.display = 'none';
+    elements.hideSideBarBtn.style.display = 'none';
+    elements.showSideBarBtn.style.display = 'block';
+  }
  
 }
 
