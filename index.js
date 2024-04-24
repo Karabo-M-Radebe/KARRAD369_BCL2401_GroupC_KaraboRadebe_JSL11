@@ -268,7 +268,7 @@ function openEditTaskModal(task) {
 
   // Delete task using a helper function and close the task modal
   deleteTaskBtn.addEventListener('click', () => {
-    saveTaskChanges(taskId);
+    saveTaskChanges(task.id);
     toggleModal(false, elements.editTaskModal);
   });
 
