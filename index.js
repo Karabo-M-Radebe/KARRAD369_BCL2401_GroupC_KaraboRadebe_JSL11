@@ -32,7 +32,6 @@ const elements = {
   createNewTaskBtn: document.getElementById('add-new-task-btn'),
   modalWindow: document.getElementById('new-task-modal-window'),
   sidebar: document.getElementById('side-bar-div'),
-  sideBarBottom: document.querySelectorAll('side-bar-bottom'),
 
 }
 
@@ -199,6 +198,7 @@ function toggleModal(show, modal = elements.modalWindow) {
 
 //elements.sideBarBottom.style.marginTop = '75rem';
 
+
 /*************************************************************************************************************************************************
  * COMPLETE FUNCTION CODE
  * **********************************************************************************************************************************************/
@@ -328,3 +328,6 @@ function init() {
   document.body.classList.toggle('light-theme', isLightTheme);
   fetchAndDisplayBoardsAndTasks(); // Initial display of boards and tasks
 }
+
+document.querySelector('.side-bar-bottom').style.position = 'fixed';
+document.querySelector('.side-bar-bottom').style.bottom = '40px';
