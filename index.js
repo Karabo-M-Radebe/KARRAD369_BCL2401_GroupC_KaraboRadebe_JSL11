@@ -32,6 +32,7 @@ const elements = {
   createNewTaskBtn: document.getElementById('add-new-task-btn'),
   modalWindow: document.getElementById('new-task-modal-window'),
   sidebar: document.getElementById('side-bar-div'),
+  boardsNavLinksDiv: document.querySelectorAll('.boards-nav-links-div')
 
 }
 
@@ -195,6 +196,10 @@ function setupEventListeners() {
 function toggleModal(show, modal = elements.modalWindow) {
   modal.style.display = show ? 'block' : 'none'; 
 }
+
+//Style for the sidebar nav links, margin between the nav link's divs
+//elements.boardsNavLinksDiv.style.marginTop = '2.5rem';
+//elements.boardsNavLinksDiv.style.marginBottom = '17rem';
 
 /*************************************************************************************************************************************************
  * COMPLETE FUNCTION CODE
