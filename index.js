@@ -32,6 +32,7 @@ const elements = {
   createNewTaskBtn: document.getElementById('add-new-task-btn'),
   modalWindow: document.getElementById('new-task-modal-window'),
   sidebar: document.getElementById('side-bar-div'),
+  sideBarBottom: document.querySelectorAll('side-bar-bottom'),
 
 }
 
@@ -195,6 +196,8 @@ function setupEventListeners() {
 function toggleModal(show, modal = elements.modalWindow) {
   modal.style.display = show ? 'block' : 'none'; 
 }
+
+//elements.sideBarBottom.style.marginTop = '75rem';
 
 /*************************************************************************************************************************************************
  * COMPLETE FUNCTION CODE
